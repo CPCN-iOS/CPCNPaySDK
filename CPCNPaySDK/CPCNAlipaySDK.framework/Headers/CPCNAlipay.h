@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AlipaySDK/AlipaySDK.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,8 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
  @return 调用成功或失败
  */
 - (BOOL)aliPayWithAuthCode:(NSString *)authCode
-    fromScheme:(NSString *)schemeStr
-      wapcallback:(CompletionBlock __nullable)completionBlock;
+                fromScheme:(NSString *)schemeStr
+               wapcallback:(void (^ __nullable)(NSDictionary *resultDict))completionBlock;
 
 
 @end
