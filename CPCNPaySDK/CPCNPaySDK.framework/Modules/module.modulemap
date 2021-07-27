@@ -1,6 +1,0 @@
-framework module CPCNPaySDK {
-  umbrella header "CPCNPaySDK.h"
-
-  export *
-  module * { export * }
-}
